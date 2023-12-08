@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/1.2_Selector.css" />
+    <style>
+      .menu li {
+        color: brown;
+      }
+
+      .menu > ul > li {
+        color: blue;
+      }
+
+      /* 
+      ">" Bu isaret secilen claas'in yada parent'in bir altindaki butun cocugunu yada cocuklarini secer sadece
+      */
+
+      .menu + article {
+        color: blueviolet;
+      }
+      /* 
+      "+" Bu isaret secilen claas'in yada parent'in secilen ilk secilmisi getirir getirir
+      */
+
+      .menu ~ article {
+        background-color: cadetblue;
+      }
+      /* 
+      "~" Bu isaret secilen claas'in yada parent'in sonrasinda ayni sinifta yda ayni sirada olan secilmisi getrir
+      daha iceride olani gentirmez
+      */
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li>Ocak</li>
+        <li>Subat</li>
+        <li>Mart</li>
+        <li>
+          Nisan
+          <ul>
+            <li>Pazartesi</li>
+            <li>Sali</li>
+            <li>Carsamba</li>
+          </ul>
+        </li>
+        <li>Mayis</li>
+        <li>Haziran</li>
+      </ul>
+    </nav>
+
+    <article>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente
+      quam eveniet earum fugiat aliquid quas quod ratione tempore sit rerum
+      deleniti modi eum quisquam aspernatur atque, repellendus culpa. Tempora!
+    </article>
+
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum odit quo,
+      adipisci nesciunt soluta culpa.
+    </article>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Modi fugiat ipsa rerum delectus.</li>
+      <li>Ipsam delectus id maiores. Ea?</li>
+    </ul>
+  </body>
+</html>

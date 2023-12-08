@@ -1,0 +1,23 @@
+ul.about{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about li a{
+    text-decoration: none;
+    color: rgb(0, 119, 222);
+   
+}
+
+.about li:nth-last-child(-n+){
+    background-color: rgb(59, 55, 55);
+}
+
+.about a::first-line{
+    color: aliceblue;
+}
+
+
+
+

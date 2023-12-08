@@ -1,0 +1,40 @@
+nav.menu{
+    background-color: rgb(315,185,13);
+    text-align: center;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+   
+}
+
+nav.menu li{
+    display: inline-block; 
+}
+
+nav.menu a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+nav.menu  li:hover a{
+background-color: black;
+color: aliceblue;
+}
+
+nav.menu li::after{
+    content: "|";
+}
+
+nav.menu li:last-child::after{
+    content: "▶";
+}
+
+nav.menu li:first-child::before{
+    content: "◀";
+}
+
+

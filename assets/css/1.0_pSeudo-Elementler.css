@@ -1,0 +1,43 @@
+.about::first-letter{
+    font-size: 2rem;
+}
+
+.about::first-line{
+    color: brown  ;
+}
+
+.about::selection{
+    background-color: lime;
+}
+
+.liste li {
+    color: red;
+}
+
+.liste li::marker{
+    color: blue;
+    font-size: 3rem;
+}
+
+/* 
+::after Bir elementin hemen sonrasina
+ bir icerikk ve bu icerige stil eklemek icin kullanilir
+
+::before Bir elementin hemen oncesine
+ bir icerikk ve bu icerige stil eklemek icin kullanilir
+*/
+
+.about span{
+    color: blue;
+}
+
+.about span::before{
+    content:"⚠️ " ;
+    color: chartreuse;
+}
+
+
+.about span::after{
+    content:"⚠️" ;
+    color: chartreuse;
+}

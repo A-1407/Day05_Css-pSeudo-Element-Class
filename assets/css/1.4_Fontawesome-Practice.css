@@ -1,0 +1,9 @@
+.liste li{
+    list-style-type: none;
+}
+
+.liste li::before{
+content: "\f04b";
+font: var(--fa-font-solid);
+padding: 0 10px 0 0;
+}

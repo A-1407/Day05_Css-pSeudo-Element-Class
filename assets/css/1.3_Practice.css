@@ -1,0 +1,13 @@
+ /* .btn-mode:hover + .content{
+    background-color: black;
+    color: aliceblue;
+}  */
+
+.chk-mode:checked + .content{
+    background-color: black;
+    color: aliceblue;
+}
+ 
+.chk-mode{
+    display: none;
+}
